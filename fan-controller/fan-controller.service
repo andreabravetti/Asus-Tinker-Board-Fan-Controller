@@ -1,4 +1,7 @@
+[Unit]
 Description="Fan Controller"
+Requires=local-fs.target
+After=local-fs.target
 
 [Service]
 Type=simple
@@ -9,3 +12,6 @@ StartLimitInterval=60
 StartLimitBurst=10
 TimeoutSec=30
 KillMode=mixed
+
+[Install]
+WantedBy=default.target
