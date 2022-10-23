@@ -25,6 +25,8 @@ int cpu_temperature = 0;
 int speed = 0;
 int current_speed = 0;
 
+void asus_pwm_start(int pwm_ch,int mode,unsigned int range,unsigned int duty);
+
 void set_fan_speed(int duty){
 	// speed is percentage between 0 and 100
 
