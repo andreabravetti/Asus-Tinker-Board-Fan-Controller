@@ -12,3 +12,18 @@ The fan-controller folder contains the source code for a fan controller program 
 
 The [ASUS GPIO API for C](https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/HelpDesk_Download/) is required and Wiring Pi must be installed from the GPIO_API_for_C folder.
 
+To install it:
+
+```
+wget http://dlcdnet.asus.com/pub/ASUS/mb/Linux/Tinker_Board_2GB/GPIO_API_for_C.ZIP
+mkdir GPIO_API_for_C && cd GPIO_API_for_C
+unzip ../GPIO_API_for_C.ZIP
+chmod +x ./build
+./build
+```
+
+To uninstall it:
+
+```
+./build uninstall
+```
